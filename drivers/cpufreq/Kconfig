@@ -68,6 +68,13 @@ config CPU_FREQ_DEFAULT_GOV_POWERSAVE
 	  the frequency statically to the lowest frequency supported by
 	  the CPU.
 
+config CPU_FREQ_DEFAULT_GOV_ALTRIA_BY_G4NP
+        bool "altria_by_g4np"
+        select CPU_FREQ_GOV_ALTRIA_BY_G4NP
+        select CPU_FREQ_GOV_ONDEMAND
+        help
+          Option for altria gov, fallback to ondemand incase of failure
+
 config CPU_FREQ_DEFAULT_GOV_USERSPACE
 	bool "userspace"
 	select CPU_FREQ_GOV_USERSPACE
