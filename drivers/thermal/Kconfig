@@ -138,6 +138,11 @@ config THERMAL_GOV_FAIR_SHARE
 	help
 	  Enable this to manage platform thermals using fair-share governor.
 
+config THERMAL_GOV_SHOREKEEPER_V3
+	bool "shorekeeper_v3 thermal governor"
+	help
+	  Enabling this let shorekeeper manage the thermal.
+
 config THERMAL_GOV_STEP_WISE
 	bool "Step_wise thermal governor"
 	help
