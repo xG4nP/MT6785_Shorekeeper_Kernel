@@ -869,7 +869,7 @@ static int (struct seq_file *s, void *v)
 					"clk_disable", s, v);
 }
 
-static int clkdbg_prepare_enable(struct seq_file *s, void *v)
+static int (struct seq_file *s, void *v)
 {
 	return clkdbg_clkop_int_ckname(clk_prepare_enable,
 					"clk_prepare_enable", s, v);
