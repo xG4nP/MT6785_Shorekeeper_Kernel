@@ -1126,7 +1126,7 @@ static int (struct seq_file *s, void *v)
 	return 0;
 }
 
-static int clkdbg_reg_write(struct seq_file *s, void *v)
+static int (struct seq_file *s, void *v)
 {
 	void __iomem *reg;
 	unsigned long val = 0;
