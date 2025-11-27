@@ -1733,7 +1733,7 @@ static void select_task_prefer_cpu_fair(struct task_struct *p, int *result)
 inline int
 task_match_on_dst_cpu(struct task_struct *p, int src_cpu, int target_cpu)
 {
-	struct task_struct *target_tsk;
+	struct task_struct;
 	struct rq *rq = cpu_rq(target_cpu);
 
 #ifdef CONFIG_MTK_SCHED_BOOST
