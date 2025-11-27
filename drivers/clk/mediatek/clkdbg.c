@@ -845,7 +845,7 @@ static int clkdbg_clkop_void_ckname(void (*clkop)(struct clk *clk),
 	return 0;
 }
 
-static int clkdbg_prepare(struct seq_file *s, void *v)
+static int (struct seq_file *s, void *v)
 {
 	return clkdbg_clkop_int_ckname(clk_prepare,
 					"clk_prepare", s, v);
